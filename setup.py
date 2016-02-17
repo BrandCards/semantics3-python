@@ -6,8 +6,7 @@ except ImportError:
     from distutils.core import setup
 
 install_requires = [
-    'requests-oauthlib >= 0.4.0',
-    'urlnorm'
+    'requests-oauthlib >= 0.4.0'
 ]
 def read(fname):
    try:
