@@ -38,14 +38,12 @@ class Semantics3Request:
 
     def fetch(self, method, endpoint, params):
         api_endpoint = self.api_base + endpoint
-        print (api_endpoint)
         content = self.oauth.request(
                     method,
                     api_endpoint,
                     params = params,
                     headers={'User-Agent':'Semantics3 Python Lib/0.2'}
                   )
-        print(content)
         return content
 
     def remove(self, endpoint, *fields):
